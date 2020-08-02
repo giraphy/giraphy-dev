@@ -1,0 +1,32 @@
+{
+  "name": "@giraphy/giraphy-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giraphy/giraphy-dev.git"
+  },
+  "author": "yuiiitoto <yuitosato.w@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giraphy/giraphy-dev/issues"
+  },
+  "homepage": "https://github.com/giraphy/giraphy-dev#readme",
+  "devDependencies": {
+    "@types/graphql": "0.13",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@giraphy/giraphy": "^0.1.0",
+    "@types/sqlstring": "^2.2.1",
+    "graphql": "0.13",
+  }
+}
