@@ -32,7 +32,7 @@ export const comments: GiraphyObjectType<any, any, any> = new GiraphyObjectType(
       },
       where: (table: string, args: any, context: any) => {
         // @ts-ignore
-        return Object.keys(args).map(key => `${table}.${users.fieldConfig[key].sqlColumn} = ${SqlString.escape(args[key])}`)
+        return Object.keys(args).map(key => `${table}.${users.fieldConfig[key].sqlColumn} = ${escapeSqlString(args[key])}`)
           .join(" and ");
       },
     },
@@ -52,7 +52,7 @@ export const commentsRootQuery: GraphQLFieldConfig<any, any> = {
   // @ts-ignore
   where: (table: string, args: any, context: any) => {
     // @ts-ignore
-    return Object.keys(args).map(key => `${table}.${comments.fieldConfig[key].sqlColumn} = ${SqlString.escape(args[key])}`)
+    return Object.keys(args).map(key => `${table}.${comments.fieldConfig[key].sqlColumn} = ${escapeSqlString(args[key])}`)
       .join(" and ");
   },
 };
@@ -82,7 +82,7 @@ export const users: GiraphyObjectType<any, any, any> = new GiraphyObjectType({
       },
       where: (table: string, args: any, context: any) => {
         // @ts-ignore
-        return Object.keys(args).map(key => `${table}.${comments.fieldConfig[key].sqlColumn} = ${SqlString.escape(args[key])}`)
+        return Object.keys(args).map(key => `${table}.${comments.fieldConfig[key].sqlColumn} = ${escapeSqlString(args[key])}`)
           .join(" and ");
       },
     },
@@ -101,7 +101,7 @@ export const usersRootQuery: GraphQLFieldConfig<any, any> = {
   // @ts-ignore
   where: (table: string, args: any, context: any) => {
     // @ts-ignore
-    return Object.keys(args).map(key => `${table}.${users.fieldConfig[key].sqlColumn} = ${SqlString.escape(args[key])}`)
+    return Object.keys(args).map(key => `${table}.${users.fieldConfig[key].sqlColumn} = ${escapeSqlString(args[key])}`)
       .join(" and ");
   },
 };

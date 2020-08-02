@@ -25,7 +25,7 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
-    "@giraphy/giraphy": "^0.1.0",
+    "@giraphy/giraphy": "^0.1.2",
     "graphql": "0.13"
   }
 }
