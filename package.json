@@ -26,7 +26,6 @@
   },
   "dependencies": {
     "@giraphy/giraphy": "^0.1.0",
-    "@types/sqlstring": "^2.2.1",
-    "graphql": "0.13",
+    "graphql": "0.13"
   }
 }
