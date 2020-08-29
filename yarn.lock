@@ -2,17 +2,15 @@
 # yarn lockfile v1
 
 
-"@giraphy/giraphy@0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@giraphy/giraphy/-/giraphy-0.1.6.tgz#a5624ddd3dc5521c4c6e6b0cab9bb7448ea9da07"
-  integrity sha512-NqhhIzg6khOEj2SHGcPt0wsNjvHrgVSJOC5BlU8hf5ZHLrPkc/X7A+CjlM3rw6bgDF0nT8veqrmdMYI5Moi6PA==
+"@giraphy/giraphy@0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@giraphy/giraphy/-/giraphy-0.1.8.tgz#74d5058077d9011f0497e50fa26b66c1a058839a"
+  integrity sha512-vy2mCdt0eJ6eIvMOP8530nVR1kfrmjG0aUhljakwW5RPJXXybOv7+DzGV0CbireqmGTCmnDjfLn1CZdfQcdIEw==
   dependencies:
     body-parser "^1.19.0"
     express "^4.17.1"
-    express-graphql "0.11.0"
+    express-graphql "0.8.0"
     express-jwt "^6.0.0"
-    express-jwt-authz "^2.3.1"
-    graphql-relay "^0.6.0"
     join-monster "2.1.2"
     js-yaml "^3.14.0"
     jwks-rsa "^1.8.0"
@@ -130,7 +128,7 @@ abbrev@1:
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
 
-accepts@^1.3.7, accepts@~1.3.7:
+accepts@^1.3.5, accepts@~1.3.7:
   version "1.3.7"
   resolved "https://registry.yarnpkg.com/accepts/-/accepts-1.3.7.tgz#531bc726517a3b2b41f850021c6cc15eaab507cd"
   integrity sha512-Il80Qs2WjYlJIBNzNkK6KYqlVMTbZLXgHx2oT0pU/fjRHyEp+PEfEPY0R3WCwAGVOtauxh1hOxNgIf5bv7dQpA==
@@ -704,20 +702,15 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
   dependencies:
     homedir-polyfill "^1.0.1"
 
-express-graphql@0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/express-graphql/-/express-graphql-0.11.0.tgz#48089f0d40074d7783c65ff86dd9cae95afea2ef"
-  integrity sha512-IMYmF2aIBKKfo8c+EENBNR8FAy91QHboxfaHe1omCyb49GJXsToUgcjjIF/PfWJdzn0Ofp6JJvcsODQJrqpz2g==
+express-graphql@0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/express-graphql/-/express-graphql-0.8.0.tgz#5d434709bcabe6d5527751730376d8265a197976"
+  integrity sha512-yjFFLTw9J/7QbLBs/SRX1IykEnJHIdaAeDTiw1yC+zPHoQSCijKdPZYhe+B0SC0sFJydAXW6RSqqnERGgKPH7g==
   dependencies:
-    accepts "^1.3.7"
+    accepts "^1.3.5"
     content-type "^1.0.4"
-    http-errors "1.8.0"
-    raw-body "^2.4.1"
-
-express-jwt-authz@^2.3.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/express-jwt-authz/-/express-jwt-authz-2.4.1.tgz#405b303b3479ad3e862878ac0c08be191040c8e5"
-  integrity sha512-ruH86e2NvWicG9maStztyAyBJV0E8RsInXUm6Kuc/9pDtVJmJw3qigv1MEVs5bH+aksZuxocYZdz+N1V/9F+Dg==
+    http-errors "^1.7.2"
+    raw-body "^2.3.3"
 
 express-jwt@^6.0.0:
   version "6.0.0"
@@ -1080,7 +1073,7 @@ http-errors@1.7.3, http-errors@~1.7.2:
     statuses ">= 1.5.0 < 2"
     toidentifier "1.0.0"
 
-http-errors@1.8.0:
+http-errors@^1.7.2:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.8.0.tgz#75d1bbe497e1044f51e4ee9e704a62f28d336507"
   integrity sha512-4I8r0C5JDhT5VkvI47QktDW75rNlGVsUf/8hzjCC/wkWI/jdTRmBb9aI7erSG82r1bjKY3F6k28WnsVxB1C73A==
@@ -1964,7 +1957,7 @@ raw-body@2.4.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-raw-body@^2.4.1:
+raw-body@^2.3.3:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.4.1.tgz#30ac82f98bb5ae8c152e67149dac8d55153b168c"
   integrity sha512-9WmIKF6mkvA0SLmA2Knm9+qj89e+j1zqgyn8aXGd7+nAduPoqgI9lO57SAZNn/Byzo5P7JhXTyg9PzaJbH73bA==
