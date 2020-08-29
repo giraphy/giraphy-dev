@@ -14,6 +14,5 @@ create table `comments`
     `user_id` bigint unsigned not null,
     `text` varchar(300) not null,
     primary key (`comment_id`),
-    constraint `FK_COMMENTS_USER_ID_USERS_USER_ID` foreign key (`comment_id`) references `users` (`user_id`)
+    constraint `FK_COMMENTS_USER_ID_USERS_USER_ID` foreign key (`user_id`) references `users` (`user_id`)
 )
-
